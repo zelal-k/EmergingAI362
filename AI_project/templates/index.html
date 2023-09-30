@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice Assistant</title>
+</head>
+<body>
+    <h1>Voice Assistant</h1>
+    <form action="/process_voice" method="post">
+        <label for="voice_input">Speak something:</label>
+        <input type="text" name="voice_input" id="voice_input">
+        <input type="submit" value="Submit">
+    </form>
+    <p>Voice Input: {{ voice_input }}</p>
+    <p>Assistant Response: {{ response }}</p>
+</body>
+</html>
